@@ -1,7 +1,6 @@
 '.pdf-viewer':
   'f5': 'pdf-viewer:refresh'
   'ctrl-f5': 'pdf-viewer:toggle-refreshing'
-  'f8': 'pdf-viewer:invert-current'
   'f12': 'pdf-viewer:compile'
   'up': 'pdf-viewer:scroll-up'
   'down': 'pdf-viewer:scroll-down'

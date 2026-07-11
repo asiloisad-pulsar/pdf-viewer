@@ -27,9 +27,6 @@
               { type: 'separator' }
               { label: 'Rotate Clockwise', command: 'pdf-viewer:rotate-clockwise' }
               { label: 'Rotate Counterclockwise', command: 'pdf-viewer:rotate-counterclockwise' }
-              { type: 'separator' }
-              { label: 'Invert Current Viewer', command: 'pdf-viewer:invert-current' }
-              { label: 'Invert Mode', command: 'pdf-viewer:invert-mode' }
               { label: 'Toggle Sidebar', command: 'pdf-viewer:toggle-sidebar' }
               { label: 'Presentation Mode', command: 'pdf-viewer:presentation-mode' }
             ]

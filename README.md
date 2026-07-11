@@ -9,7 +9,6 @@ View PDF files directly in Pulsar. Based on Mozilla's PDF.js with theme integrat
 - **PDF.js integration**: Full-featured PDF viewing in editor panes.
 - **Theme support**: Adapts to Pulsar UI and syntax themes.
 - **Auto-reload**: Watches for file changes and refreshes automatically.
-- **Color inversion**: Dark mode for PDFs toggle or via [invert-colors](https://github.com/asiloisad/pulsar-invert-colors).
 - **LaTeX integration**: Compile `.tex` files and SyncTeX support via [latex-tools](https://github.com/asiloisad/pulsar-latex-tools).
 - **Typst integration**: Compile `.typ` files via [typst-tools](https://github.com/asiloisad/pulsar-typst-tools).
 - **Build coordination**: Pauses auto-refresh during builds and reloads on completion.
@@ -25,14 +24,12 @@ To install `pdf-viewer` search for [pdf-viewer](https://web.pulsar-edit.dev/pack
 
 Commands available in `atom-workspace`:
 
-- `pdf-viewer:reload-all`: reload all open PDF viewers,
-- `pdf-viewer:invert-mode`: toggle color inversion for all viewers.
+- `pdf-viewer:reload-all`: reload all open PDF viewers.
 
 Commands available in `.pdf-viewer`:
 
 - `pdf-viewer:refresh`: refresh content for the current viewer,
 - `pdf-viewer:toggle-refreshing`: toggle auto-refresh for the current viewer,
-- `pdf-viewer:invert-current`: invert colors for the current viewer,
 - `pdf-viewer:compile`: compile the source `.typ` or `.tex` file,
 - `pdf-viewer:open-tex`: open the corresponding `.typ` or `.tex` source file,
 - `pdf-viewer:next-page`: go to the next page,
@@ -63,9 +60,7 @@ Commands available in `.pdf-viewer`:
 
 ## Style
 
-The style of the documents has been adapted to match the theme in Pulsar. As the style changes, you may notice the menu colors change. An additional option has been introduced to invert the colors of the document itself. To invert the document colors, change the options in the package settings, use `pdf-viewer:invert-mode` from the command palette, or press keybind while viewing an active file.
-
-![dark-mode](https://github.com/asiloisad/pulsar-pdf-viewer/blob/master/assets/dark-mode.png?raw=true)
+The style of the documents has been adapted to match the theme in Pulsar. As the style changes, you may notice the menu colors change.
 
 ## Document outline
 

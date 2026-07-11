@@ -327,8 +327,8 @@ window.addEventListener("message", (message) => {
     return scrollToPosition(message.data);
   } else if (message.data.type === "setdestination") {
     return scrollToDestination(message.data);
-  } else if (message.data.type === "invert") {
-    return toggleInvertMode(message.data);
+  } else if (message.data.type === "set-color-inverted") {
+    return setColorInverted(message.data.value);
   } else if (message.data.type === "currentdest") {
     return spawnCurrentDest(message.data);
   } else if (message.data.type === "command") {
@@ -476,14 +476,9 @@ function findAgain(findPrevious) {
   });
 }
 
-let stateInvertMode;
-
-function toggleInvertMode(data) {
-  stateInvertMode = data && Object.hasOwn(data, "initial")
-    ? data.initial
-    : !stateInvertMode;
+function setColorInverted(state) {
   document.documentElement.classList.toggle(
-    "pdf-viewer-invert-mode",
-    Boolean(stateInvertMode)
+    "pdf-viewer-colors-inverted",
+    Boolean(state)
   );
 }

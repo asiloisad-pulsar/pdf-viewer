@@ -83,10 +83,22 @@ textarea {
   border-right: solid 1px var(--toolbar-border-color);
 }
 
-.pdf-viewer-invert-mode {
+.page,
+.thumbnailImage {
+  transition: filter 200ms ease-in-out;
+}
+
+.pdf-viewer-colors-inverted {
   .page,
   .thumbnailImage {
     filter: invert(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page,
+  .thumbnailImage {
+    transition: none;
   }
 }
 

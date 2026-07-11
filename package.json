@@ -25,7 +25,8 @@
   "providedServices": {
     "pdf-viewer": {
       "versions": {
-        "1.0.0": "provideViewer"
+        "1.0.0": "provideViewer",
+        "1.1.0": "provideViewer"
       }
     },
     "navigation-adapter": {
@@ -73,15 +74,8 @@
       "type": "boolean",
       "default": true
     },
-    "invertMode": {
-      "order": 4,
-      "title": "Invert colors",
-      "description": "Inverts the colours of the pages. This flag can be toggled by command `pdf-viewer:invert-mode`. It can be toggled per file by press `F8` in pdf-viewer.",
-      "type": "boolean",
-      "default": false
-    },
     "defaultZoom": {
-      "order": 5,
+      "order": 4,
       "title": "Default zoom",
       "description": "The default zoom level when opening a PDF.",
       "type": "string",
@@ -100,7 +94,7 @@
       ]
     },
     "defaultSidebar": {
-      "order": 6,
+      "order": 5,
       "title": "Default sidebar",
       "description": "The default sidebar view when opening a PDF.",
       "type": "string",
@@ -113,14 +107,14 @@
       ]
     },
     "snoFilter": {
-      "order": 7,
+      "order": 6,
       "title": "Filter section numbers",
       "description": "Remove leading section numbers from PDF outline entries in navigation-panel.",
       "type": "boolean",
       "default": false
     },
     "scrollmap": {
-      "order": 8,
+      "order": 7,
       "title": "Scrollmap",
       "description": "Show PDF outline markers on the scrollbar when scrollmap is installed.",
       "type": "object",
@@ -150,7 +144,7 @@
       }
     },
     "debug": {
-      "order": 9,
+      "order": 8,
       "title": "Debug",
       "description": "Show some errors in console.",
       "type": "boolean",
