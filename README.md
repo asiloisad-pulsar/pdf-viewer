@@ -2,19 +2,19 @@
 
 View PDF files directly in Pulsar. Based on Mozilla's PDF.js with theme integration, SyncTeX support, and document outline.
 
-![title-pic](https://github.com/asiloisad/pulsar-pdf-viewer/blob/master/assets/title-pic.png?raw=true)
+![title-pic](https://github.com/asiloisad-pulsar/pdf-viewer/blob/master/assets/title-pic.png?raw=true)
 
 ## Features
 
 - **PDF.js integration**: Full-featured PDF viewing in editor panes.
 - **Theme support**: Adapts to Pulsar UI and syntax themes.
 - **Auto-reload**: Watches for file changes and refreshes automatically.
-- **LaTeX integration**: Compile `.tex` files and SyncTeX support via [latex-tools](https://github.com/asiloisad/pulsar-latex-tools).
-- **Typst integration**: Compile `.typ` files via [typst-tools](https://github.com/asiloisad/pulsar-typst-tools).
+- **LaTeX integration**: Compile `.tex` files and SyncTeX support via [latex-tools](https://github.com/asiloisad-pulsar/latex-tools).
+- **Typst integration**: Compile `.typ` files via [typst-tools](https://github.com/asiloisad-pulsar/typst-tools).
 - **Build coordination**: Pauses auto-refresh during builds and reloads on completion.
-- **Document outline**: Navigate via [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel).
-- **Scrollmap**: Shows PDF outline markers on the scrollbar when [scrollmap](https://github.com/asiloisad/pulsar-scrollmap) is installed.
-- **SOFiSTiK help**: Search keywords at current scope via [sofistik-tools](https://github.com/asiloisad/pulsar-sofistik-tools).
+- **Document outline**: Navigate via [navigation-panel](https://github.com/asiloisad-pulsar/navigation-panel).
+- **Scrollmap**: Shows PDF outline markers on the scrollbar when [scrollmap](https://github.com/asiloisad-pulsar/scrollmap) is installed.
+- **SOFiSTiK help**: Search keywords at current scope via [sofistik-tools](https://github.com/asiloisad-pulsar/sofistik-tools).
 
 ## Installation
 
@@ -64,7 +64,7 @@ The style of the documents has been adapted to match the theme in Pulsar. As the
 
 ## Document outline
 
-The viewer supports the [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel) package via the `navigation-adapter` service. You can search through the document using the all-in outline tree instead of the PDFjs outline. Scroll position is tracked and the active section is highlighted in the panel.
+The viewer supports the [navigation-panel](https://github.com/asiloisad-pulsar/navigation-panel) package via the `navigation-adapter` service. You can search through the document using the all-in outline tree instead of the PDFjs outline. Scroll position is tracked and the active section is highlighted in the panel.
 
 ## URI options
 
@@ -72,7 +72,7 @@ The package supports additional options when opening a PDF. These options allow 
 
 ## LaTeX
 
-This package integrates with [latex-tools](https://github.com/asiloisad/pulsar-latex-tools) for compilation and SyncTeX support:
+This package integrates with [latex-tools](https://github.com/asiloisad-pulsar/latex-tools) for compilation and SyncTeX support:
 
 - **Compile**: Use directly from the PDF viewer to compile the corresponding `.tex` file.
 - **Forward SyncTeX** (source → PDF): Use synctex trigger from the editor.
@@ -83,7 +83,7 @@ For PDF files created by TeX using the `--synctex=1` option, clicking on the PDF
 
 ## Typst
 
-This package integrates with [typst-tools](https://github.com/asiloisad/pulsar-typst-tools) for compilation:
+This package integrates with [typst-tools](https://github.com/asiloisad-pulsar/typst-tools) for compilation:
 
 - **Compile**: Use directly from the PDF viewer to compile the corresponding `.typ` file.
 - **Open source**: Use `pdf-viewer:open-tex` to open the `.typ` source file.
@@ -93,7 +93,7 @@ When both `.typ` and `.tex` source files exist, the Typst source takes priority.
 
 ## SOFiSTiK
 
-This package is adapted to support `sofistik-tools` for help functions using search keywords at the current scope. For more information, see the [sofistik-tools](https://github.com/asiloisad/pulsar-sofistik-tools) package.
+This package is adapted to support `sofistik-tools` for help functions using search keywords at the current scope. For more information, see the [sofistik-tools](https://github.com/asiloisad-pulsar/sofistik-tools) package.
 
 ## Provided Service `pdf-viewer`
 
@@ -141,7 +141,7 @@ consumePdfViewer(service) {
 
 ## Provided Service `navigation-adapter`
 
-Exposes the PDF document outline to [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel). Registers automatically when both packages are installed.
+Exposes the PDF document outline to [navigation-panel](https://github.com/asiloisad-pulsar/navigation-panel). Registers automatically when both packages are installed.
 
 In your `package.json`:
 
