@@ -18,7 +18,7 @@ View PDF files directly in Pulsar. Based on Mozilla's PDF.js with theme integrat
 
 ## Installation
 
-To install `pdf-viewer` search for [pdf-viewer](https://web.pulsar-edit.dev/packages/pdf-viewer) in the Install pane of the Pulsar settings or run `ppm install pdf-viewer`. Alternatively, you can run `ppm install asiloisad/pulsar-pdf-viewer` to install a package directly from the GitHub repository.
+To install `pdf-viewer` search for [pdf-viewer](https://web.pulsar-edit.dev/packages/pdf-viewer) in the Install pane of the Pulsar settings or run `ppm install pdf-viewer`. Alternatively, you can run `ppm install asiloisad-pulsar/pdf-viewer` to install a package directly from the GitHub repository.
 
 ## Commands
 
