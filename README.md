@@ -2,6 +2,9 @@
 
 View PDF files directly in Pulsar. Based on Mozilla's PDF.js with theme integration, SyncTeX support, and document outline.
 
+> [!NOTE]
+> This package is in maintenance mode. If you use [Lumine](https://github.com/lumine-code/lumine), you may be interested in [pdf-view](https://github.com/lumine-code/pdf-view).
+
 ![title-pic](https://github.com/asiloisad-pulsar/pdf-viewer/blob/master/assets/title-pic.png?raw=true)
 
 ## Features
